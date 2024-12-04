@@ -82,7 +82,7 @@ public class FourCompact
         int height = image.getHeight();
         int width = image.getWidth();
 
-        BufferedImage newestImage = new BufferedImage(width*2, height*2, BufferedImage.TYPE_INT_ARGB);
+        BufferedImage newestImage = new BufferedImage(width*2, height*2, BufferedImage.TYPE_INT_RGB);
 
 
         for (int rx=0; rx<width-1; rx++)
