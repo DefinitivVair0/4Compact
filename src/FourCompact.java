@@ -21,8 +21,14 @@ public class FourCompact
 
         try
         {
-            encode();
-            decode();
+            if(args.length == 0) {encode(); decode();}
+            else if (args[0].equals("--encode") || args[0].equals("-e")) {encode();}
+            else if (args[0].equals("--decode") || args[0].equals("-d")) {decode();}
+            else
+            {
+                System.err.println("WARNING: Unknown argument \"" + args[0] + "\" -> ignoring" );
+                encode(); decode();
+            }
         } catch (IOException e) { throw new RuntimeException(e); }
     }
 
