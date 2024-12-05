@@ -12,7 +12,8 @@ But: the concept works -> sharp contours and greater contrasts are still as visi
 # How to use
 1. Copy the to be compacted image into the execution directory and rename to "image.png"
 2. Run the program
-3. The program generates the compressed (--encode / -e) or re-uncompressed image
-   (-> when no (valid) argument is supplied the image will be both en- and decoded.)
+3. The program generates the compressed (--encode / -e) or re-uncompressed image (--decode / -d)
+
+    (-> when no (valid) argument is supplied the image will be both en- and decoded.)
 
 (The program does not work the way it was meant to, but at least it looks cool?)
